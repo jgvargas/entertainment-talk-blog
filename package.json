@@ -1,0 +1,24 @@
+{
+  "name": "entertainment-talk-blog",
+  "version": "1.0.0",
+  "description": "A blog dedicated to my opinions on entertainment media",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgvargas/entertainment-talk-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgvargas/entertainment-talk-blog/issues"
+  },
+  "homepage": "https://github.com/jgvargas/entertainment-talk-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

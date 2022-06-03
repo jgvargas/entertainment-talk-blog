@@ -1,0 +1,30 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+<section class="container">
+  <h1 class="section-title">Recent articles</h1>
+
+  <ul class="articles-list">
+    {%- for post in collections.post | reverse -%}
+      <li>
+        <article class="snippet">
+          <h3 class="snippet-title">
+            <a href={{post.url}}>{{ post.data.title }}</a>
+          </h3>
+          <p class="article-author">
+            by <span>{{post.data.author}}</span>
+            on {{post.date | postDate}}
+          </p>
+          <p class="description">{{ post.data.description}}</p>
+          <a href={{post.url}}>Continue reading</a>
+
+          <img src={{post.data.image}} alt={{post.data.imageAlt}}>
+        </article>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>  
+
+
+    
