@@ -1,0 +1,14 @@
+---
+layout: 'base.njk'
+---
+
+<section class="container">
+  <h1 class="article-title">
+    {{ title}}
+  </h1>
+  <figure>
+    <img src={{image}} alt={{imageAlt}}>
+  </figure>
+
+  {{content | safe}}
+</section>
