@@ -1,20 +1,25 @@
-<li>
-        <article class="snippet">
-          <div>
-            <h3 class="snippet-title">
-              <a href={{post.url}}>{{ post.data.title }}</a>
-            </h3>
-            <p class="article-author">
-              by <span>{{post.data.author}}</span>
-              on {{post.date | postDate}}
-            </p>
-            <p class="description">{{ post.data.description}}</p>
-            <a href={{post.url}}>Continue reading</a>
-          </div>
+<li class="article-list-item">
+  <article class="split">
+    <div class="snippet-text">
+      <h3 class="snippet-title">
+        <a href={{post.url}}>{{ post.data.title }}</a>
+      </h3>
+      <p class="article-author">
+        <span class="lighten-text">by</span>
+        {{post.data.author}}
+        <span class="lighten-text">on</span>
+        {{post.date | postDate}}
+      </p>
+      <p class="description">{{ post.data.description}}</p>
+      <div>
+        <a class="btn btn-primary" href={{post.url}}>Continue reading</a>
+      </div>
+      
+    </div>
 
-          <div>
-            <img src={{post.data.image}} alt={{post.data.imageAlt}}>
-          </div>
-          
-        </article>
-      </li>
+    <div>
+      <img src={{post.data.image}} alt={{post.data.imageAlt}}>
+    </div>
+    
+  </article>
+</li>

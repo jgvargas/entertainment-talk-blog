@@ -1,20 +1,33 @@
 ---
-title: example
+title: John's Pop-culture blog
 layout: 'base.njk'
 ---
 
-<section id="welcome-section" class="container">
-    <h1>Welcome to my Halo the TV series blog!</h1>
-    <p>This is there a share my excitment and criticism of the latest entry of live action Halo universe</p>
-    <a href="#">Feautured articles</a>
-    <a href="#">Most recent articles</a>
+<section id="welcome-section" class="container split">
+  <div class="welcome-text">
+    <h1>Welcome to my Pop-culture blog!</h1>
+    <p>Hi, my name is John and this is where I share my excitment and criticism of all my favorite shows and Pop-culture events.</p>
+    <p>You can browse through the featured articles or simply see my most recent posts. Thank you!</p>
+    <div class="btn-section">
+      <a class="btn btn-primary" href="#">Feautured articles</a>
+      <a class="btn btn-secondary" href="#">Most recent articles</a>
+    </div>
+    
+  </div>
+  <div>
+    <img src="./assets/myself.jpg" alt="">
+  </div>
+    
 </section>
 
-<section id="featured-articles" class="container">
-    <h2 class="">Featured articles</h2>
+<section id="featured-articles">
+  <div class="container">
+    <h1 class="text-center">Featured articles</h1>
 
     {%- for post in collections.featured | reverse -%}
       {% include 'article-snippet.njk' %}
     {%- endfor -%}
+  </div>
+    
     
 </section>

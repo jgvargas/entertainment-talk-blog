@@ -3,12 +3,15 @@ layout: 'base.njk'
 ---
 
 <section class="container">
-  <h1 class="article-title">
-    {{ title}}
-  </h1>
-  <figure>
-    <img src={{image}} alt={{imageAlt}}>
-  </figure>
+  <div class="article-space">
+    
+    <figure>
+      <img src={{image}} alt={{imageAlt}}>
+    </figure>
+    <h1 class="article-title">
+      {{ title}}
+    </h1>
 
-  {{content | safe}}
+    {{content | safe}}
+  </div>
 </section>

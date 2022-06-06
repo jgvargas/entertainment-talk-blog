@@ -1,9 +1,17 @@
 :root {
-    --color-nav-bg: #000;
-    --color-bg-grey: rgb(99, 96, 87);
-    --color-text-white: rgb(236, 234, 234);
+    --color-nav-bg: rgb(78, 97, 206);
+    --color-bg-neutral: rgb(228, 227, 227);
+    --color-text-primary: rgb(49, 69, 180);
+    --color-text-secondary: rgb(255, 255, 255);
+    --color-text-black: rgb(73, 73, 73);
+    --color-text-lighten: rgb(121, 121, 121);
+
+    --color-bg-white:#fff;
 }
 
+/*------------
+    General
+------------*/
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +19,13 @@
     box-sizing: border-box;
 }
 
-/*------------
-    General
-------------*/
 html {
-    background: var(--color-bg-grey);
-    color: var(--color-text-white);
+    color: var(--color-text-black);
+}
+
+h1 {
+    color: var(--color-text-primary);
+    font-size: 2rem;
 }
 
 .container {
@@ -28,7 +37,6 @@ html {
 .split {
     display: flex;
     flex-direction: row;
-
 }
 
 .split > * {
@@ -40,20 +48,54 @@ img {
     max-width: 100%;
 }
 
+.article {
+    margin: 1rem 0;
+}
 
+.btn {
+    text-decoration: none;
+    padding: .75rem 1.25rem;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+}
 
-/*------------
-    Main
-    #welcome-section
-    
-------------*/
-#welcome-section {
+.btn-primary {
+    background: var(--color-nav-bg);
+    color: var(--color-text-secondary);
+}
+
+.btn-primary:hover {
+    background: var(--color-bg-neutral);
+    color: var(--color-nav-bg);
+}
+
+.btn-secondary {
+    background: var(--color-bg-white);
+}
+
+.btn-secondary:hover { background: var(--color-bg-neutral); }
+
+.text-center {text-align: center;}
+
+.logo { height: 3rem; }
+
+/*----------
+    Index
+-----------*/
+
+#welcome-section,
+#featured-articles {
     padding: 5rem 0;
 }
 
-#featured-articles h2 {
-    padding-bottom: 1rem;
-    text-align: center;
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-text > * {
+    margin: 1rem 0;
 }
 
 .blog-entry {
@@ -69,16 +111,46 @@ img {
     margin: 1rem 0;
 }
 
-/*
-    Article Snippet
-*/
-.snippet {
-    display: flex;
-    list-style-type: none;
+#featured-articles {
+    background: var(--color-bg-neutral);
 }
 
-.snippet > * {
-    flex-basis: 100%;
+#featured-articles h1 {
+    margin-bottom: 2rem;
+}
+
+/*------------------
+    Article Snippet
+------------------*/
+.article-list-item { 
+    list-style-type: none;
+    margin: 2rem 0;
+}
+
+.article-author {
+    margin-top: 1rem;
+}
+
+.lighten-text { color: var(--color-text-lighten);}
+.description {
+    margin: 2rem 0;
+}
+/*------------
+    Blogs
+------------*/
+.blogs-title {
+    margin: 2rem 0;
+}
+
+/*
+    Article
+*/
+.article-space {
+    margin: 2rem 0;
+}
+
+.article-title {
+    margin: 1.5rem 0;
 }
 
 /*------------
@@ -86,6 +158,7 @@ img {
 ------------*/
 nav {
     background: var(--color-nav-bg);
+    color: var(--color-bg-white);
 }
 
 nav .container {
@@ -95,12 +168,9 @@ nav .container {
     padding: 1rem 0;
 }
 
-.logo {
-    height: 3rem;
-}
-
 nav ul {
     display: flex;
+    color: var(--color-text);
 }
 
 nav li {
@@ -111,11 +181,15 @@ nav a {
     margin-left: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--color-text-white);
 }
 
 nav a:hover {
-    color: var(--color-bg-grey);
+    border-bottom: 2px solid var(--color-bg-white);
+    
+}
+
+nav a:visited {
+    color: inherit;
 }
 
 /*------------
@@ -124,7 +198,11 @@ nav a:hover {
 
 footer {
     background: var(--color-nav-bg);
+    color: var(--color-text-secondary);
     padding: 2rem 0;
     text-align: center;
 }
 
+.btn-footer {
+    margin-bottom: 1rem;
+}
