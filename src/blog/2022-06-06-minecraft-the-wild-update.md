@@ -5,6 +5,7 @@ author: John Vargas
 date: 2022-06-06T22:57:16.233Z
 tags:
   - post
+  - featured
 image: https://www.minecraft.net/content/dam/games/minecraft/key-art/Xbox_Minecraft_WildUpdate_Main_.Net_1170x500.jpg.transform/minecraft-image-large/image.jpg
 imageAlt: Minecraft The Wild logo
 ---
