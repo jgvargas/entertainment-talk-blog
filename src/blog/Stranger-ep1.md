@@ -5,7 +5,7 @@ date: 2022-06-06
 tags: ["post", "Stranger-Things", "featured"]
 image: /assets/Stranger-Things/StrangerThings_cast_2.bmp
 imageAlt: Stranger Things season 4 poster
-description: My review of the much anticipated Halo series on Paramount+
+description: Stranger Things season 4 has begun, and this time with a staggered release
 ---
 
 Stranger Things season 4 returns from its epic cliff hanger of last season with a bang!
